@@ -96,24 +96,24 @@ module.exports = {
           if (!('isBanned' in chat)) chat.isBanned = false
           if (!('welcome' in chat)) chat.welcome = false
           if (!('detect' in chat)) chat.detect = false
-          if (!('sWelcome' in chat)) chat.sWelcome = ''
-          if (!('sBye' in chat)) chat.sBye = ''
-          if (!('sPromote' in chat)) chat.sPromote = ''
-          if (!('sDemote' in chat)) chat.sDemote = ''
+          if (!('sWelcome' in chat)) chat.sWelcome = false
+          if (!('sBye' in chat)) chat.sBye = false
+          if (!('sPromote' in chat)) chat.sPromote = false
+          if (!('sDemote' in chat)) chat.sDemote = false
           if (!('descUpdate' in chat)) chat.descUpdate = true
           if (!('stiker' in chat)) chat.stiker = false
           if (!('delete' in chat)) chat.delete = false
           if (!('antiLink' in chat)) chat.antiLink = false
           if (!isNumber(chat.expired)) chat.expired = 0
-          if (!('antiBadword' in chat)) chat.antiBadword = true
+          if (!('antiBadword' in chat)) chat.antiBadword = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: false,
           detect: false,
-          sWelcome: '',
-          sBye: '',
-          sPromote: '',
-          sDemote: '',
+          sWelcome: false, 
+          sBye: false, 
+          sPromote: false, 
+          sDemote: false, 
           descUpdate: true,
           stiker: false,
           delete: false,
